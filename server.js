@@ -102,5 +102,5 @@ app.get("/curriculum/:id", function (req, res) {
     .then((result) => res.json(result.rows))
     .catch((e) => console.error(e));
 });
-const port = 3001;
+const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`Server is running on PORT ${port}`));
