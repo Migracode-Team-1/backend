@@ -3,14 +3,14 @@ const cors = require("cors");
 const { Pool } = require("pg");
 const app = express();
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "http://81.184.28.86",
 };
 app.use(cors(corsOptions));
 const pool = new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "miprimercurriculum",
-  password: "postgres",
+  user: "qboygsbdttqkvt",
+  host: "ec2-52-31-219-113.eu-west-1.compute.amazonaws.com",
+  database: "d37i2hidmgdagv",
+  password: "f94bec735309795de6d4dd22a925db353dfe599001cf15e5743209258a0547e7",
   port: 5432,
 });
 app.use(express.json());
