@@ -3,7 +3,7 @@ const cors = require("cors");
 const { Pool } = require("pg");
 const app = express();
 const corsOptions = {
-  origin: "http://81.184.28.86",
+  origin: ["http://81.184.28.86", "https://miprimercurriculum.herokuapp.com"]
 };
 app.use(cors(corsOptions));
 const pool = new Pool({
