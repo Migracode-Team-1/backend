@@ -102,5 +102,6 @@ app.get("/curriculum/:id", function (req, res) {
     .then((result) => res.json(result.rows))
     .catch((e) => console.error(e));
 });
+const host = '0.0.0.0';
 const port = process.env.PORT || 3001;
-app.listen(port, () => console.log(`Server is running on PORT ${port}`));
+app.listen(port, host, () => console.log(`Server is running on PORT ${port}`));
