@@ -12,6 +12,9 @@ const pool = new Pool({
   database: "d37i2hidmgdagv",
   password: "f94bec735309795de6d4dd22a925db353dfe599001cf15e5743209258a0547e7",
   port: 5432,
+  ssl: {    /* <----- Add SSL option */
+    rejectUnauthorized: false,
+  }
 });
 app.use(express.json());
 // Login
