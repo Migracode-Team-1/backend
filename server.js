@@ -7,10 +7,10 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 const pool = new Pool({
-  user: "qboygsbdttqkvt",
-  host: "ec2-52-31-219-113.eu-west-1.compute.amazonaws.com",
-  database: "d37i2hidmgdagv",
-  password: "f94bec735309795de6d4dd22a925db353dfe599001cf15e5743209258a0547e7",
+  user: "mzojvszhoywpgs",
+  host: "ec2-52-208-254-158.eu-west-1.compute.amazonaws.com",
+  database: "de8tlf345obrm7",
+  password: "5dd797e138996f786533a9acefaaae274e549a29652366a5a9fe39cb3d8cfe91",
   port: 5432,
   ssl: {    /* <----- Add SSL option */
     rejectUnauthorized: false,
